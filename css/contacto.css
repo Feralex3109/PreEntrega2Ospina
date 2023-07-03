@@ -13,9 +13,45 @@ body {
 header {
   background-color: white;
   font-size: 15px;
+  background-image: radial-gradient(ellipse, black, white);
 }
 
 div {
+  color: white;
+}
+
+.texto {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  display: inline-flexbox;
+}
+
+nav {
+  list-style: none;
+  background-image: linear-gradient(to top, black, white);
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  color: darkblue;
+  padding: 3rem, 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s ease;
+  height: 30px;
+  width: 100px;
+}
+
+.boton:hover {
+  background: gray;
+  box-shadow: 0 0 30px rgba(39, 37, 37, 0.329);
+  transition: transform 0.5s;
+}
+
+.boton:focus {
+  background: black;
   color: white;
 }
 

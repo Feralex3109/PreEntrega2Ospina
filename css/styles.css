@@ -13,30 +13,42 @@ body {
 header {
   background-color: white;
   font-size: 15px;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  background-image: radial-gradient(ellipse, black, white);
 }
 
 nav {
-  display: flexbox;
   list-style: none;
+  background-image: linear-gradient(to top, black, white);
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  display: inline-flexbox;
 }
 
 .boton {
   color: darkblue;
-  cursor: pointer;
+  padding: 3rem, 5rem;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s ease;
   height: 30px;
   width: 100px;
 }
 
 .boton:hover {
+  background: gray;
   box-shadow: 0 0 30px rgba(39, 37, 37, 0.329);
-  transition: transform 0.6s;
+  transition: transform 0.5s;
+}
+
+.boton:focus {
+  background: black;
+  color: white;
 }
 
 .titulo {
@@ -64,6 +76,13 @@ nav {
   justify-content: center;
   min-height: 100vh;
   min-width: 100vh;
+}
+
+img:hover {
+  background: none;
+  transform: skewX(20deg);
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
 @media (min-width: 600px) {
